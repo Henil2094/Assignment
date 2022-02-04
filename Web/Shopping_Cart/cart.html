@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <form class="form1">
+    <h4>Add Product</h4>
+    <hr style="border: 1px solid rgb(112, 103, 103);">
+
+    <div class="form-group">
+      <label for="pimage">Product Image</label>
+      <input style="border: 1px solid rgb(112, 103, 103);" class="form-control" type="file" name="pimage" id="pimage">
+    </div>
+
+
+    <div class="form-group">
+      <label for="pname">Product name</label>
+      <input type="text" class="form-control" name="pname" id="pname">
+    </div>
+
+    <div class="form-group">
+      <label for="pprice">Product Price</label>
+      <input type="text" class="form-control" name="pprice" id="pprice">
+    </div>
+    <div class="form-group">
+      <label for="pqnt">Product Quantity</label>
+      <input type="text" class="form-control" name="pqnt" id="pqnt">
+    </div>
+
+    <div class="form-group row">
+      <label class="col-lg-3 col-form-label form-control-label"></label>
+      <div class="col-lg-9">
+        <input class="btn btn-primary btnSave" type="button" value="Submit" onclick="Submit(this);">
+      </div>
+    </div>
+  </form>
+
+  <table class="mytable" id="ta">
+    <thead>
+      <tr>
+        <th id="plist" colspan="5">
+          <h4>Product List</h4>
+        </th>
+      </tr>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Product name</th>
+        <th scope="col">Product Price</th>
+        <th scope="col">Product Quantity</th>
+        <th scope="col">Action</th>
+
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+    
+  </table>
+
+  <table class="mytable2" id="cart">
+
+    <thead>
+      <tr>
+        <th id="plist2" colspan="5">
+          <h4>Cart</h4>
+        </th>
+      </tr>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Product name</th>
+        <th scope="col">Product Price</th>
+        <th scope="col">Product Quantity</th>
+        <th scope="col">Action</th>
+
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+
+  <div class="ordertotal" id="ot" style="border: 1px solid black;">
+    <div id="t" class="odertotal_content text-md-right mr-3">
+      <div class="font-weight-bold">Order total:</div>
+      <div id="total"></div>
+    </div>
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</body>
+</html>
