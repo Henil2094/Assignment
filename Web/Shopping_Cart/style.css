@@ -1,0 +1,65 @@
+
+*{
+    box-sizing: border-box;
+}
+
+#btn btn-primary{
+  width: 40%;
+}
+form{
+ 
+  border: 1px solid rgb(59, 58, 58);
+  margin-top: 25px;
+  margin-left: 20px;
+  padding: 25px 25px;
+  margin-right: 60%
+ 
+} 
+
+input[type=text]{
+  
+  height: 30px;
+ 
+  border-color: rgb(128, 115, 115);
+  width: 100%;
+}
+
+table, td, th {
+  border:1px solid rgb(128, 115, 115);
+
+  text-align: center;
+  padding: 10px;
+}
+
+
+table {
+
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.mytable{
+  position: absolute;
+  top: 30px;
+  right: 90px;
+}
+
+.btn btn-danger{
+  color: aqua;
+}
+
+#cart{
+
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 72%;
+}
+
+
+
+#ot{
+  width: 11%;
+  margin-left: 844px;
+  background-color: lightblue;
+
+}
